@@ -188,15 +188,6 @@ body p {
     color: #dfdfdf;
 }
 
-.contactUs{
-    margin-top: -60px;
-    margin-left: 60%;
-    color:#dfdfdf;
-}
-
-.contactUs p{
-    margin: 5px;
-}
 
 #page-container {
     position: relative;
@@ -204,7 +195,7 @@ body p {
 }
 
 #content-wrap {
-    padding-bottom: 135px; 
+    padding-bottom: 300px; 
     
 }
 
@@ -212,9 +203,9 @@ body p {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 135px;
-    background-color: #483f34;
-    color: #dfdfdf;
+    height: 300px;
+    background-color: #dedede;
+    color: #1f2937;
 }
 
 /* FAQ  */
