@@ -315,7 +315,7 @@ body p {
 
 .guadaLocationButton:hover{
     filter: brightness(110%);
-    outline: 5x #b3282f solid;
+    outline: 5px #b3282f solid;
 
 }
 
