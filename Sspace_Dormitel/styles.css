@@ -38,7 +38,7 @@ html{
 }
 
 .topLeftNavigation p{
-    margin-top: 25%;
+    margin-top: 25vh;
     margin-left: -4%;
     text-align: center;
     color: #dfdfdf;
@@ -304,7 +304,7 @@ body p {
 
 .westLocationButton:hover{
     filter: brightness(110%);
-    outline: 3px #b3282f solid;
+    outline: 5px #b3282f solid;
 
 }
 
@@ -324,7 +324,7 @@ body p {
 
 .guadaLocationButton:hover{
     filter: brightness(110%);
-    outline: 3px #b3282f solid;
+    outline: 5x #b3282f solid;
 
 }
 
@@ -335,6 +335,7 @@ body p {
 .descriptionLocation{
     position: relative;
     float: left;
+    overflow: hidden;
     background-color: #b3282f;
     width: 30%;
     height: 700px;
