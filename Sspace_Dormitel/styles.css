@@ -278,17 +278,16 @@ body p {
     margin-left: 5%;
     right:60%;
     width: 24%;
+    margin-bottom: -100%;
     font: bold;
 }
 
 .collapsibleColumn{
-    top: -145px;
     left: 30%;
     right: 5%;
     width: 65%;
     position: relative;
     font: bold;
-
 }
 
 
