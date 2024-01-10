@@ -4,10 +4,19 @@
         <title>Locations</title>
         <link rel="stylesheet" href="styles.css" type="text/css"/>
         <link rel="icon" href="Images/logo.png" type="image/icon type">
+        <style>
+            .backButton:hover{
+                filter: brightness(110%);
+            }
+            .backButton:active{
+                filter: brightness(90%);
+            }
+        </style>
+
     </head>
     <header class="headerAll">
         <div class="topLeftNavigation">
-            <a href="home.html">
+            <a href="home.html" >
                 <div class="logoDiv">
                     <img class="logoNav" src="Images/logo.png" alt="logo"/>
                     <p2 style="font-size: 35px; margin-left: 15px; margin-top: -5px; color: #dfdfdf;">S-SPACE</p2>
@@ -29,42 +38,23 @@
     </header>
  
     <body>
-        <div id="page-container" >
+        <div id="page-container" style="overflow: hidden;">
+            <img src="Images/pattern.png" style="position: absolute; height: 100%; z-index: -1; object-fit: fill; filter: opacity(10%); top: -50px"/>
             <div id="content-wrap">
-                
-                <div class="westLocationButton" style="margin-top: 10px;">
-                    <a href="Location_West.html">
-                        <button style="position: absolute; width: auto; height: auto; font-size: 30px; background-color: #b3282f; top: 20px; left: 20px;
-                        color: #dfdfdf; text-align: center; border: 0px #ede9de solid; padding: 10px 20px;">
-                            West Rembo
-                        </button>
-                        <img src="Images/west_rembo.jpg" alt="west_rembo" style="width: 100%; height: 100%; object-fit: cover;"/>
-                    </a>
-                </div>
 
-                <div class="descriptionLocation" style="margin-top: 10px;">
-                    <center style="margin-top: 25%;">
-                        <p style="font-weight: 700; font-size: 45px; ">Choose from Our Location</p>
-                        <p style="font-weight: 500; font-size: 25px; ">
-                            Explore our two distict branches:<br>
-                            West Rembo, an oasis of tranquility, and Guadalupe, immersed in urban vibrance.<br>
-                            Can't Decide? Select the branch that aligns with your preferences.<br>
-                            What We Offer: Comfortable rooms, high-speed internet, and prime locations for a tailored experience. <br>
-                            Book Now and Defire Your Stay.
-                        </p>
-                    </center>
-                </div>
-
-                <div class="guadaLocationButton" style="margin-top: 10px; filter: brightness(110%); outline: 5px #b3282f solid;" >
-                    <a  href="Location_Guadalupe.html">
-                        <button style="position: absolute; width: auto; height: auto; font-size: 30px; background-color: #b3282f; top: 20px; left: 20px;
-                        color: #dfdfdf; text-align: center; border: 0px #ede9de solid; padding: 10px 20px;">
-                            Guadalupe
-                        </button>
-                        <img src="Images/guadalupe.jpg" alt="west_rembo" style="width: 100%; height: 100%; object-fit: cover;"/>
+                <div style="position: relative; overflow: hidden; margin-top: 2%; margin-bottom: -5%;" >
+                    <a href="Location.html" class="backButton">
+                        <div style="float: left; width: auto; margin-left: 8%;">
+                            <img src="Images/back.png" alt="" style="width: 50px; float: left; border-radius: 10px;"/>
+                            
+                            <p style="font-size: 20px; width: 80%; margin-top: 15px; margin-left: 60px; margin-right: 5%; position: relative; color: #b3282f;">
+                                <b>Back</b><br>
+                            </p>
+                        </div>
                     </a>
-                    
-                </div>
+                    <br>
+                </div>    
+
                 <div style="position: relative;float: left; width: 30%; text-align: justify; color: #1f2937; margin-top: 15%; margin-left: 10%;"> 
                     <p style="font-size: 75px; font-weight: bold; text-align: center;">Guadalupe</p>
                     <p style="font-size: 25px; margin-top: -60px;">
