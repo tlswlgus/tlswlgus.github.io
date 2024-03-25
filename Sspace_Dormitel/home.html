@@ -5,25 +5,29 @@
         <link rel="stylesheet" href="styles.css" type="text/css"/>
         <link rel="icon" href="Images/logo.png" type="image/icon type">
     </head>
+
+    <div id = "preloader"></div>
+
     <header>
         <img class="center-cropped" src="Images/header_image.jpg" alt="Header Image" >
         <div class="topLeftNavigation">
             <a href="home.html">
                 <div class="logoDiv">
-                    <img class="logoNav" src="Images/logo.png" alt="logo" />
-                    <p2 style="font-size: 35px; margin-left: 15px; margin-top: -5px; color: #dfdfdf; font-family: 'Gill Sans MT';">S-SPACE</p2>
-                    <p2 style="font-size: 35px; margin-left: 15px; margin-top: 30px; color: #dfdfdf; font-family: 'Gill Sans MT';">DORMITEL</p2>
+                    <img class="logoNav" src="Images/logo.png" alt="logo"/>
+                    <p2 style="font-size: 35px; margin-left: 15px; margin-top: -2px; color: #dfdfdf; line-height: 35px;">S-SPACE <br> DORMITEL </p2>
                 </div>
             </a>
             <p style="font-size: 60px;">
                 Affordable Bedspaces in<br>
                 Makati, Just Moments from<br>
-                BGC<br>
+                BGC<br> <br>
+
+                <a href="Take_A_Tour.html">
+                    <button> Take a Tour </button>
+                </a>
             </p>
 
-            <a href="Take_A_Tour.html">
-                <button> Take a Tour </button>
-            </a>
+            
         </div>     
              
         <div class="topRightNavigation">
@@ -40,6 +44,8 @@
     </header>
 
     <body class = "shapeImage" style="margin-bottom: -20px;">
+
+        
         <center>
             <img class="logoNav" src="Images/logo.png" alt="logo" style="margin-top: 40px;" />
             <hr style="height:3px; width:450px;color:black; background-color: black;">
@@ -80,6 +86,14 @@
             </div>
             <center style="margin-top: 160px; font-size: 23px;">2023. All Rights Reserved</center> <br>
         </footer>
-    </body>
 
-    </html>
+        <script>
+            var loader = document.getElementById("preloader");
+            
+            window.addEventListener("load", function() {
+                loader.style.display = "none";
+            })
+
+        </script>
+    </body>
+</html>
