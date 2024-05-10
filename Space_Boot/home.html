@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>S-Space Dormitel</title>
+        <link rel="stylesheet" href="styles.css" type="text/css"/>
+        <link rel="icon" href="Images/logo.png" type="image/icon type">
+    </head>
+
+    <div id = "preloader"></div>
+
+    <header style="background-color: transparent;">
+        <a href="home.html">
+            <div class="logoDiv">
+                <img class="logoNav" src="Images/logo.png" alt="logo"/>
+                <p2 style="font-size: 30px; margin-left: 15px; margin-top: 10px; color: #dfdfdf; line-height: 30px; font-weight: bold;">S-SPACE <br> DORMITEL </p2>
+            </div>
+        </a>
+        <nav>
+          <ul>
+            <li id="navbut"><a href="Rooms.html">Rooms</a></li>
+            <li id="navbut"><a href="FAQs_Leasing.html">FAQs</a></li>
+            <li id="navbut"><a href="Location.html">Location</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="Rooms.html">Home</a></li>
+            <li><a href="FAQs_Room.html">Products</a></li>
+            <li><a href="Location.html">About</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <script src="menu.js"></script>
+
+    <body class = "shapeImage" style="margin-bottom: -20px;">
+        <div style="position: relative;">
+
+            <img class="center-cropped" src="Images/header_image.jpg" alt="Header Image">
+
+            <p style="font-size: 9vh; position: absolute; align-content: center; margin-top: -75vh; text-align: center; color: #dfdfdf;"> 
+                Affordable Bedspaces in<br>
+                Makati, Just Moments from<br>
+                BGC<br>
+
+                <a href="Take_A_Tour.html">linux
+                    <button> Take a Tour </button>
+                </a>
+            </p>
+
+        </div>
+        
+        <center>
+
+            
+            <img class="logoNav" src="Images/logo.png" alt="logo" style="margin-top: 40px;" />
+            <hr style="height:3px; width:450px;color:black; background-color: black;">
+            <p style="font-size: 50px;">
+                "In the heart of the city, your dorm<br>
+                bedspace is your personal retreat.<br>
+                Choose wisely,<br>
+                Choose S-Space"
+            </p> <br>
+            <a href="Learn_More.html">
+                <button class=" roundedBlack"> Learn More </button>
+            </a>
+            
+        </center>
+        
+        <footer style= "background-color: #dedede; color: black;">
+            <center>
+                <div class="logoDiv" style="align-content: center; ">
+                    <img class="logoNav" src="Images/logo.png" alt="logo" style="width: 120px; margin-left: -230px; margin-top: 20px;" />
+                    <p2 style="font-size: 40px; font-family: 'Gill Sans MT'; margin-left: 10px; margin-top: 20px;">S-SPACE</p2>
+                    <p2 style="font-size: 40px; font-family: 'Gill Sans MT'; margin-left: 10px; margin-top: 55px;">DORMITEL</p2>
+                </div>
+            </center>
+            
+            <div style="position: relative; margin-top: -20px;">
+                <p style="font-size: 23px; float: left; margin-left: 10%;">
+                        <b>Location</b> <br>
+                        <b>- West Rembo Branch</b>: 54 JP Rizal Extension , West Rembo Makati City   <br>
+                        <b>- Guadalupe Branch</b>: 1643 Camino Dela Fe, Makati, 1212 Kalakhang Maynila<br>
+                </p>  
+
+                <p style="font-size: 23px; float: right; margin-right: 10%;">
+                    <b>Contact Us</b> <br>
+                        0917-651-6929<br>
+                        sspacedormitel@gmail.com<br>
+                </p> 
+                
+            </div>
+            <center style="margin-top: 160px; font-size: 23px;">2023.All Rights Reserved</center> <br>
+        </footer>
+
+        <script>
+            var loader = document.getElementById("preloader");
+            
+            window.addEventListener("load", function() {
+                loader.style.display = "none";
+            })
+
+        </script>
+    </body>
+</html>

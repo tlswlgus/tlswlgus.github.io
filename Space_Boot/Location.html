@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Locations | S-Space Dormitel</title>
+        <link rel="stylesheet" href="styles.css" type="text/css"/>
+        <link rel="icon" href="Images/logo.png" type="image/icon type">
+    </head>
+
+     <div id = "preloader"></div>
+ 
+    <header>
+        <a href="home.html">
+            <div class="logoDiv">
+                <img class="logoNav" src="Images/logo.png" alt="logo"/>
+                <p2 style="font-size: 30px; margin-left: 15px; margin-top: 10px; color: #dfdfdf; line-height: 30px; font-weight: bold;">S-SPACE <br> DORMITEL </p2>
+            </div>
+        </a>
+        <nav>
+          <ul>
+            <li id="navbut"><a href="Rooms.html">Rooms</a></li>
+            <li id="navbut"><a href="FAQs_Leasing.html">FAQs</a></li>
+            <li id="navbut"><a href="Location.html">Location</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="Rooms.html">Home</a></li>
+            <li><a href="FAQs_Leasing.html">Products</a></li>
+            <li><a href="Location.html">About</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <script src="menu.js"></script>
+ 
+    <body>
+        <div id="page-container" >
+            <img src="Images/pattern.png" style="position: absolute; height: 100%; z-index: -1; object-fit: fill; filter: opacity(10%); top: -50px"/>
+
+            <div id="content-wrap">
+
+                <div class="westLocationButton" style="margin-top: 10px;">
+                    <a href="Location_West.html">
+                        <button style="position: absolute; width: auto; height: auto; font-size: 30px; background-color: #b3282f; top: 20px; left: 20px;
+                        color: #dfdfdf; text-align: center; border: 0px #ede9de solid; padding: 10px 20px;">
+                            West Rembo
+                        </button>
+                        <img src="Images/west_rembo.jpg" alt="west_rembo" style="width: 100%; height: 100%; object-fit: cover;"/>
+                    </a>
+                </div>
+
+                <div class="descriptionLocation" style="margin-top: 10px;">
+                    <center style="margin-top: 25%;">
+                        <p style="font-weight: 700; font-size: 45px;">Choose from Our Location</p>
+                        <p style="font-weight: 500; font-size: 25px;">
+                            Explore our two distict branches:<br>
+                            West Rembo, an oasis of tranquility, and Guadalupe, immersed in urban vibrance.<br>
+                            Can't Decide? Select the branch that aligns with your preferences.<br>
+                            What We Offer: Comfortable rooms, high-speed internet, and prime locations for a tailored experience. <br>
+                            Book Now and Defire Your Stay.
+                        </p>
+                    </center>
+                </div>
+
+                <div class="guadaLocationButton" style="margin-top: 10px;">
+                    <a href="Location_Guadalupe.html">
+                        <button style="position: absolute; width: auto; height: auto; font-size: 30px; background-color: #b3282f; top: 20px; left: 20px;
+                        color: #dfdfdf; text-align: center; border: 0px #ede9de solid; padding: 10px 20px;">
+                            Guadalupe
+                        </button>
+                        <img src="Images/guadalupe.jpg" alt="west_rembo" style="width: 100%; height: 100%; object-fit: cover;"/>
+                    </a>
+                    
+                </div>
+                <p style="color: #dedede;">dsdasfasfsa</p>
+            </div>
+
+                <footer class="footerFAQ" style="margin-top: 1000px;">
+                    <center>
+                        <div class="logoDiv" style="margin-top: 20px; align-content: center; ">
+                            <img class="logoNav" src="Images/logo.png" alt="logo" style="width: 120px; margin-left: -230px;" />
+                            <p2 style="font-size: 40px; color: #1f2937; font-family: 'Gill Sans MT'; margin-left: 10px;">S-SPACE</p2>
+                            <p2 style="font-size: 40px; color: #1f2937; font-family: 'Gill Sans MT'; margin-left: 10px; margin-top: 35px;">DORMITEL</p2>
+                        </div>
+                    </center>
+                    
+                    <div style="position: relative; margin-top: -20px;">
+                        <p style="font-size: 23px; float: left; margin-left: 10%;">
+                                <b>Location</b> <br>
+                                <b>- West Rembo Branch</b>: 54 JP Rizal Extension , West Rembo Makati City   <br>
+                                <b>- Guadalupe Branch</b>: 1643 Camino Dela Fe, Makati, 1212 Kalakhang Maynila<br>
+                        </p>  
+    
+                        <p style="font-size: 23px; float: right; margin-right: 10%;">
+                            <b>Contact Us</b> <br>
+                                0917-651-6929<br>
+                                sspacedormitel@gmail.com<br>
+                        </p> 
+                        
+                    </div>
+                    <center style="margin-top: 160px; font-size: 23px;">2023. All Rights Reserved</center>
+                </footer>
+        </div>
+        <script>
+            var loader = document.getElementById("preloader");
+            
+            window.addEventListener("load", function() {
+                loader.style.display = "none";
+            })
+
+        </script>
+    </body>
+
+</html>
