@@ -9,7 +9,7 @@
     position: fixed;
     bottom: 25px;
     right: 35px; 
-    z-index: 99; 
+    z-index: 0; 
     border: none; 
     outline: none;
     background-color: #1a1a1a; 
@@ -90,4 +90,104 @@
     width: 100%;
     position: fixed;
     z-index: 100;
+}
+
+.collapsible {
+    background-color: #dedede;
+    color: #1a1a1a;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    border: 2px #858585 solid;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.collapsible::after{
+    content: '+';
+    color: #1a1a1a;
+    font-size: 25px;
+    font-weight: bold;
+    float: right;
+    rotate: 180deg;
+    margin-right: 10px;
+    
+}
+
+.collapsible:hover {
+    background-color: #cacaca;
+}
+
+.collapsible:active{
+    background-color: #f4f4f4;
+}
+
+.collapsible.active::after{
+    content: '-';
+    color: #1a1a1a;
+    font-size: 25px;
+    font-weight: bold;
+    float: right;
+    rotate: 180deg;
+    margin-right: 10px;
+}
+
+.content {
+    padding: 0px 18px; 
+    background-color: white;
+    max-height: 0px;
+    overflow: hidden;
+    margin-top: -4px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: 2px #858585 solid;
+    transition: max-height 0.1s ease-out;
+    
+}
+
+.content p{
+    z-index: 0;
+    
+}
+
+.center-cropped {
+    filter: brightness(50%);
+    height: 115vh;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    margin-top: -250px;
+    z-index: -1;
+}
+
+
+.roundedBlack {
+    transition-duration: 0.2s;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+    border: none;
+    color: #dfdfdf;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.roundedBlack:hover {
+    background: #000000;
+    color: #dfdfdf;
+}
+
+.roundedBlack:active {
+    background: #333333;
+    color: #dfdfdf;
 }
