@@ -54,15 +54,34 @@
 .imageGradient::after {
     content: '';
     position: absolute;
-    left: 2.5%;
-    right: 2.5%;
+    left: 1%;
+    right: 1%;
     top: 0;
-    width: 95%;
+    width: 98%;
     height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
     z-index: 1;
  }
-  
+
+.descLabel{
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    background-color: #dfdfdf;
+    font-size: 20px;
+    color: #000000;
+    opacity: 70%;
+}
+
+.descLabel p1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
 .imageTitle {
     position: absolute;
     left: 10px;
@@ -138,7 +157,7 @@
 }
 
 .content {
-    padding: 0px 18px; 
+    padding: 0px 20px; 
     background-color: white;
     max-height: 0px;
     overflow: hidden;
@@ -157,7 +176,7 @@
 
 .center-cropped {
     filter: brightness(50%);
-    height: 115vh;
+    height: 120vh;
     width: 100%;
     position: relative;
     object-fit: cover;
@@ -190,4 +209,42 @@
 .roundedBlack:active {
     background: #333333;
     color: #dfdfdf;
+}
+
+
+.roundedWhite {
+    transition-duration: 0.2s;
+    border-radius: 20px;
+    background-color: #dfdfdf;
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.roundedWhite:hover {
+    background: #CCCCCC;
+    color: #1a1a1a;
+}
+
+.roundedWhite:active {
+    background: #E6E6E6;
+    color: #1a1a1a;
+}
+
+
+.locationButton:hover{
+    filter: brightness(110%);
+    outline: 5px #b3282f solid;
+
+}
+
+.locationButton:active{
+    filter: brightness(90%); 
 }

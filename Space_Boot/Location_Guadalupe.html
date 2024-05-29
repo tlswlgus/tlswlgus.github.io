@@ -7,7 +7,30 @@
         <title>Locations | S-Space Dormitel</title>
         <link rel="stylesheet" href="styles.css" type="text/css"/>
         <link rel="icon" href="Images/logo.png" type="image/icon type">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+        <link
+          href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+          rel="stylesheet"
+        />
         <style>
+    
+            #map {
+                position: relative;
+                height: 600px;
+                width: 100%;
+            }
+            .marker {
+                background-image: url('Images/logo.png');
+                background-size: cover;
+                width: 50px;
+                height: 33px;
+                cursor: pointer;
+            }
+            
             .backButton:hover{
                 filter: brightness(110%);
             }
@@ -15,153 +38,225 @@
                 filter: brightness(90%);
             }
         </style>
-
     </head>
 
     <div id = "preloader"></div>
  
-    <header>
-        <a href="home.html">
-            <div class="logoDiv">
-                <img class="logoNav" src="Images/logo.png" alt="logo"/>
-                <p2 style="font-size: 30px; margin-left: 15px; margin-top: 10px; color: #dfdfdf; line-height: 30px; font-weight: bold;">S-SPACE <br> DORMITEL </p2>
+
+    <nav class="navbar navbar-expand-sm  navbar-dark " style="background-color: #1a1a1a;">
+        <a class="navbar-brand navbar ms-3" href="home.html">
+            <img src="Images/logo.png"  alt="" width="100">
+            <div class="ms-2">
+                <b><p class="mb-1 logoPara" style="margin-bottom: -10px; margin-right:-75px; color: #dfdfdf; ">S-SPACE</p>
+                <p class="mb-1 logoPara" style="margin-top: -15px; margin-right:-75px; color: #dfdfdf; ">DORMITEL</p></b>
             </div>
         </a>
-            <nav>
-                <ul>
-                    <li id="navbut"><a href="Rooms.html">Rooms</a></li>
-                    <li id="navbut"><a href="FAQs_Leasing.html">FAQs</a></li>
-                    <li id="navbut"><a href="Location.html">Location</a></li>
-                </ul>
-                </nav>
-                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <ul class="mobile-menu">
-                    <li><a href="Rooms.html">Home</a></li>
-                    <li><a href="FAQs_Leasing.html">Products</a></li>
-                    <li><a href="Location.html">About</a></li>
-                </ul>
+        <button class="navbar-toggler me-3"type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse me-3" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto " style="color: #dfdfdf;" >
+                <b><a class="nav-item nav-link navbut ms-3" style="color: #dfdfdf; font-size: 20px; " href="Rooms.html">ROOM</a></b>
+                <b><a class="nav-item nav-link ms-3 navbut" style="color: #dfdfdf; font-size: 20px; " href="Location.html">LOCATION</a></b>
+                <b><a class="nav-item nav-link ms-3 navbut" style="color: #dfdfdf; font-size: 20px; " href="FAQs_Leasing.html">FAQs</a></b>
             </div>
-    </header>
+        </div>
+    </nav> 
 
-    <script src="menu.js"></script>
+    <body style="background-color: #dedede;">
+        <div style="position: relative; overflow: hidden; left: 50px; top: 30px;" >
+            <a href="Location.html" class="backButton">
+                <div style="float: left; width: auto;">
+                    <img src="Images/back.png" alt="" style="width: 50px; float: left; border-radius: 10px;"/>
+                    
+                    <p style="font-size: 20px; width: 80%; margin-top: 10px; margin-left: 60px; margin-right: 5%; position: relative; color: #b3282f;">
+                        <b>Back</b><br>
+                    </p>
+                </div>
+            </a>
+            <br>
+        </div>    
+
+        <div class="row ms-5 me-5 mt-5 mb-3">
+            <div class="col-md-6 align-self-center">
+                <p style="font-size: 60px; font-weight: bold; text-align: center;">
+                    Guadalupe
+                </p>
+                <p style="font-size: 25px;">
+                    S-Space Dormitel: Elevate your corporate living experience with S-Space Dormitel, offering full-building rentals just minutes from BGC and Pasig in Makati City. Unparalleled convenience and comfort await.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="Images/guada_gate.jpg" alt="west_rembo" style="width: 100%; height: 650px; object-fit: cover;"/>
+            </div>
+        </div>
+
+        <div class="ms-5 me-5">
+            <p style="font-size: 50px; font-weight: bold; color: #1f2937;">
+                "Your Ideal Makati Residence Minutes Away from BGC and Pasig"
+            </p>
+            <p style="font-size: 20px; font-weight: 400; text-align: justify; color: #1f2937;">
+                Welcome to S-Space Dormitel West Rembo – your premier destination for upscale urban living in Makati! Our full-building rental is tailored for corporate clients seeking ultimate convenience, just a 5-15 minute walk from BGC and Pasig. Unwind in style with our monthly promo rates, where our 6PAX ,4PAX and 2PAX units redefine comfort at budget-friendly prices. Explore the epitome of residence at West Rembo, Makati, and step into a world where luxury seamlessly meets accessibility.
+            </p>
+            <div id="map"></div>
+        </div>
  
-    <body>
-        <div id="page-container" style="overflow: hidden;">
-            <img src="Images/pattern.png" style="position: absolute; height: 100%; z-index: -1; object-fit: fill; filter: opacity(10%); top: -50px"/>
-            <div id="content-wrap">
+        <div class="ms-5 me-5 mb-2">
+            <p style="font-size: 50px; font-weight: bold; color: #1f2937;">
+                "Services, you will love"
+            </p>
+            <p style="font-size: 20px; font-weight: 400; text-align: justify; color: #1f2937;">
+                Elevate your lifestyle with S-Space Dormitel Guadalupe – the epitome of modern living in the heart of Makati City. Experience the perfect blend of affordability and luxury in our open-for-viewing 4PAX rooms at only Php5,500 per person/bed. Discover the convenience of our prime location at Guadalupe, Makati, and make your residence a statement of style and comfort. Choose S-Space Dormitel for an unparalleled living experience in Makati!    
+            </p>
+            
+        </div>
 
-                <div style="position: relative; overflow: hidden; margin-top: 2%; margin-bottom: -5%;" >
-                    <a href="Location.html" class="backButton">
-                        <div style="float: left; width: auto; margin-left: 8%;">
-                            <img src="Images/back.png" alt="" style="width: 50px; float: left; border-radius: 10px;"/>
-                            
-                            <p style="font-size: 20px; width: 80%; margin-top: 15px; margin-left: 60px; margin-right: 5%; position: relative; color: #b3282f;">
-                                <b>Back</b><br>
-                            </p>
-                        </div>
-                    </a>
-                    <br>
-                </div>    
+        <div class="ms-5 me-5 mb-2">
+            <center>
+                <hr style="width:90%; height:3px; border-width:0; background-color:#1a1a1a;">
+                <p style="font-size: 50px; font-weight: bold; color: #1f2937;">
+                    Guadalupe
+                </p>
+                <p style="font-size: 20px; color: #1f2937;">
+                    AMENITIES
+                </p>
+            </center>
 
-                <div style="position: relative;float: left; width: 30%; text-align: justify; color: #1f2937; margin-top: 15%; margin-left: 10%;"> 
-                    <p style="font-size: 75px; font-weight: bold; text-align: center;">Guadalupe</p>
-                    <p style="font-size: 25px; margin-top: -60px;">
-                        S-Space Dormitel: Elevate your corporate living experience with S-Space Dormitel, offering full-building rentals just minutes from BGC and Pasig in Makati City. Unparalleled convenience and comfort await.
-                    </p>
-                </div>
-                <div style="float: left; width: 35%; height: 720px; margin-top: 2%; margin-left:10%; margin-bottom: 100px; margin-right: 15%;">
-                    
-                    <img src="Images/guada_gate.jpg" alt="guada_gate" style="width: 100%; height: 100%; object-fit: cover;"/>
-                    
-                </div>
-                <p style="font-size: 50px; font-weight: bold; margin-left:15%; margin-right: 10%; color: #1f2937;">
-                    "Your Ideal Makati Residence Minutes Away from BGC and Pasig"
-                </p>
-                <p style="font-size: 20px; font-weight: 400; text-align: justify; color: #1f2937; margin-left:16%; margin-right: 10%; margin-top: -40px;">
-                    Welcome to S-Space Dormitel Guadalupe – your gateway to premium urban living in Makati! Our full-building rental caters to corporate clients seeking convenience, just a 5-15 minute stroll from BGC and Pasig. With monthly promo rates, our 4PAX and 2PAX units redefine comfort at affordable prices. Explore the ideal residence at Guadalupe, Makati, and step into a world where luxury meets accessibility
-                </p>
-                <div style="margin-left: 10%; margin-right: 10%;">
-                    <img style="width: 100%; height: 800px; object-fit: cover; "; src="Images/gate.jpg" alt="gate_west">
-                </div>
-                <p style="font-size: 50px; font-weight: bold; margin-left:15%; margin-right: 10%; color: #1f2937;">
-                    "Services, you will love"
-                </p>
-                <p style="font-size: 20px; font-weight: 400; text-align: justify; color: #1f2937; margin-left:16%; margin-right: 10%; margin-top: -40px;">
-                    Elevate your lifestyle with S-Space Dormitel Guadalupe – the epitome of modern living in the heart of Makati City. Experience the perfect blend of affordability and luxury in our open-for-viewing 4PAX rooms at only Php5,500 per person/bed. Discover the convenience of our prime location at Guadalupe, Makati, and make your residence a statement of style and comfort. Choose S-Space Dormitel for an unparalleled living experience in Makati!
-                </p>
-
-                <hr style="width:85%; height:3px; border-width:0; background-color:#707070; margin-top: 2%;">
-
-                <div style="margin-left: 10%; margin-right: 10%;">
-                    <p style="font-size: 50px; font-weight: bold; margin-left:15%; margin-right: 10%; color: #1f2937; text-align: center;">
-                        Guadalupe Branch
-                    </p>
-                    <p style="font-size: 20px; font-weight: 400; margin-left:15%; margin-right: 10%; color: #1f2937; text-align: center; margin-top: -50px;">
-                        AMENITIES
-                    </p>
-                    <img style="width: 100%; height: 600px; object-fit: cover; filter: brightness(110%);"; src="Images/guada_cafeteria.JPG" alt="cafeteria">
-                    <div style="position: absolute; padding: 20px; background-color: #dfdfdfea; margin-top: -250px; margin-left: 25px; width: 25%;
-                    max-height: 175px; min-width: 325px;">
-                        <p style="font-size: 20px; color: #1f2937; margin-top: 5px;">Guadalupe</p>
-                        <p style="font-size: 30px; font-weight: bolder; color: #1f2937; margin-top: -20px;">Cafeteria</p>
-                        <p style="font-size: 20px; color: #1f2937; margin-top: -25px;">S-Space Dormitel's cafeteria offers a convenient and cozy space for corporate clients, located 5-15 minutes from BGC and Pasig in Makati City, Philippines.</p>
-                    </div>
-                    <img style="width: 49%; height: 600px; object-fit: cover; filter: brightness(110%);"; src="Images/guada_lobby.JPG" alt="lobby">
-                    <div style="position: absolute; padding: 20px; background-color: #dfdfdfea; margin-top: -250px; margin-left: 25px; width: 25%;
-                    max-height: 175px; min-width: 325px;">
-                        <p style="font-size: 20px; color: #1f2937; margin-top: 5px;">Guadalupe</p>
-                        <p style="font-size: 30px; font-weight: bolder; color: #1f2937; margin-top: -20px;">Lobby</p>
-                        <p style="font-size: 20px; color: #1f2937; margin-top: -25px;">
-                            Experience sophisticated simplicity at our lobby—a welcoming space designed for comfort and connection. With modern aesthetics and cozy seating, unwind or socialize in style. Elevate your living at S-Space Dormitel, where convenience meets elegance.
+            <div class="row ms-2 me-2">
+                <div class="col-md-12 mb-2 overflow-hidden " style="position: relative;"">
+                    <img src="Images/guada_cafeteria.JPG" alt="Four Bed" style="height: 530px; width: 100%; object-fit: cover;"/>
+                    <div class="descLabel rounded me-5 ms-3 mb-2">
+                        <p1>Cafeteria</p1>
+                        <p style="margin-bottom: 0px;">Guadalupe</p>
+                        <p>S-Space Dormitel's cafeteria offers a convenient and cozy space for corporate clients.
                         </p>
                     </div>
-                    <img style="float: right; width: 49%; height: 600px; object-fit: cover; filter: brightness(110%);"; src="Images/guada_roof.JPG" alt="rooftop">
-                    <div style="position: absolute; padding: 20px; background-color: #dfdfdfea; margin-top: -250px; margin-left: 42%; width: 25%;
-                    max-height: 175px; min-width: 325px;">
-                        <p style="font-size: 20px; color: #1f2937; margin-top: 5px;">Guadalupe</p>
-                        <p style="font-size: 30px; font-weight: bolder; color: #1f2937; margin-top: -20px;">Elevators & Rooftop</p>
-                        <p style="font-size: 20px; color: #1f2937; margin-top: -25px;">Elevate your living experience at S-Space Dormitel. Our efficient elevators ensure swift access, complemented by a relaxing rooftop for stunning views. Inquire now for an elevated lifestyle.</p>
-                    </div>
                 </div>
-
-                
             </div>
-            <footer class="footerFAQ" style="margin-top: 1000px;">
-                <center>
-                    <div class="logoDiv" style="margin-top: 20px; align-content: center; ">
-                        <img class="logoNav" src="Images/logo.png" alt="logo" style="width: 120px; margin-left: -230px;" />
-                        <p2 style="font-size: 40px; color: #1f2937; font-family: 'Gill Sans MT'; margin-left: 10px;">S-SPACE</p2>
-                        <p2 style="font-size: 40px; color: #1f2937; font-family: 'Gill Sans MT'; margin-left: 10px; margin-top: 35px;">DORMITEL</p2>
+            
+            <div class="row ms-2 me-2">
+                <div class="col-md-6 mb-2 overflow-hidden" style="position: relative;">
+                    <img src="Images/guada_lobby.JPG" alt="Four Bed" style="height: 530px; width: 100%; object-fit: cover;"/>
+                    <div class="descLabel rounded  me-5 ms-3 mb-2">
+                        <p1>Lobby</p1>
+                        <p style="margin-bottom: 0px;">Guadalupe</p>
+                        <p>
+                            Experience sophisticated simplicity at our lobby—a welcoming space designed for comfort and connection. With modern aesthetics and cozy seating, unwind or socialize in style. Elevate your living at S-Space Dormitel, where convenience meets elegance.    
+                        </p>
                     </div>
-                </center>
-                
-                <div style="position: relative; margin-top: -20px;">
-                    <p style="font-size: 23px; float: left; margin-left: 10%;">
-                            <b>Location</b> <br>
-                            <b>- West Rembo Branch</b>: 54 JP Rizal Extension , West Rembo Makati City   <br>
-                            <b>- Guadalupe Branch</b>: 1643 Camino Dela Fe, Makati, 1212 Kalakhang Maynila<br>
-                    </p>  
-
-                    <p style="font-size: 23px; float: right; margin-right: 10%;">
-                        <b>Contact Us</b> <br>
-                            0917-651-6929<br>
-                            sspacedormitel@gmail.com<br>
-                    </p> 
-                    
                 </div>
-                <center style="margin-top: 160px; font-size: 23px;">2023. All Rights Reserved</center>
-            </footer>
+                <div class="col-md-6 mb-2 overflow-hidden" style="position: relative;">
+                    <img src="Images/guada_roof.JPG" alt="Four Bed" style="height: 530px; width: 100%; object-fit: cover;"/>
+                    <div class="descLabel rounded  me-5 ms-3 mb-2">
+                        <p1>Rooftop</p1>
+                        <p style="margin-bottom: 0px;">Guadalupe</p>
+                        <p>Elevate you living experience at S-Space Dormitel. Our efficient elevators ensure swift access complemented by a relaxing rooftop for stunning views Inquire now for an elevated lifestyle.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <footer class="text-white text-center" >
+            <div class="container-fluid d-flex justify-content-center">
+                <img src="Images/logo.png" alt="" width="100">
+                <b><p class="mb-1 ms-2 logoPara" style="margin-bottom: -10px; color:#1a1a1a">S-SPACE</p>
+                <p class="mb-1 ms-2 logoPara" style="margin-top: -15px; color:#1a1a1a">DORMITEL</p></b>
+            </div>
+
+            <div class="container p-2" style="font-size: 23px; color:#1a1a1a">
+                <div class="row mt-4">
+    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <b><p class="text-uppercase mb-4">Location</p></b>
+            
+                    <p>
+                        <b>West Rembo Branch:</b> 
+                        54 JP Rizal Extension , West Rembo Makati City 
+                    </p>
+            
+                    <p>
+                        <b>Guadalupe Branch:</b> 
+                        1643 Camino Dela Fe, Makati, 1212 Kalakhang Maynila
+                    </p>
+            
+                    </div>
+    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <b><p class="text-uppercase mb-4 pb-1">Contact Us</p></b>
+                            <p>0917-651-6929</p>
+                            <p>sspacedormitel@gmail.com</p>
+                    </div>
+            </div>
+            
+            <div class="text-center p-3" style="background-color: #dedede; color:#1a1a1a">
+                © 2024 All Right Reserved
+            </div>
+        </footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button> 
         <script>
+            let mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+
+            function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0;
+            } 
+        </script>
+         <script>
             var loader = document.getElementById("preloader");
             
             window.addEventListener("load", function() {
                 loader.style.display = "none";
             })
 
+        </script>
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiamloeWVvbi0xMSIsImEiOiJjbHc3bHZ3YXIxZnk3MnZwZmVzb2o2anAyIn0.ZxFTDuH7LVNrNA3ihRaYPA';
+
+            const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v11',
+            center: [121.045339, 14.560272],
+            zoom: 19.66
+            });
+
+
+            const geojson = {
+            type: 'FeatureCollection',
+            features: [
+                {
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [121.045339, 14.560272]
+                },
+                properties: {
+                    title: 'Mapbox',
+                    description: 'Washington, D.C.'
+                }
+                }
+            ]
+            };
+
+                        // add markers to map
+            for (const feature of geojson.features) {
+            // create a HTML element for each feature
+            const el = document.createElement('div');
+            el.className = 'marker';
+
+            // make a marker for each feature and add to the map
+            new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+            }
         </script>
     </body>
 

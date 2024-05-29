@@ -1,195 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" style="font-family: 'Gill Sans', 'Gill Sans MT' ;">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Learn More | S-Space Dormitel</title>
         <link rel="stylesheet" href="styles.css" type="text/css"/>
         <link rel="icon" href="Images/logo.png" type="image/icon type">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
     </head>
-        
+
     <div id = "preloader"></div>
- 
-    <header>
-        <a href="home.html">
-            <div class="logoDiv">
-                <img class="logoNav" src="Images/logo.png" alt="logo"/>
-                <p2 style="font-size: 30px; margin-left: 15px; margin-top: 10px; color: #dfdfdf; line-height: 30px; font-weight: bold;">S-SPACE <br> DORMITEL </p2>
+
+    <nav class="navbar navbar-expand-sm  navbar-dark " style="background-color: #1a1a1a;">
+        <a class="navbar-brand navbar ms-3" href="home.html">
+            <img src="Images/logo.png"  alt="" width="100">
+            <div class="ms-2">
+                <b><p class="mb-1 logoPara" style="margin-bottom: -10px; margin-right:-75px; color: #dfdfdf; ">S-SPACE</p>
+                <p class="mb-1 logoPara" style="margin-top: -15px; margin-right:-75px; color: #dfdfdf; ">DORMITEL</p></b>
             </div>
         </a>
-            <nav>
-                <ul>
-                    <li id="navbut"><a href="Rooms.html">Rooms</a></li>
-                    <li id="navbut"><a href="FAQs_Leasing.html">FAQs</a></li>
-                    <li id="navbut"><a href="Location.html">Location</a></li>
-                </ul>
-                </nav>
-                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <ul class="mobile-menu">
-                    <li><a href="Rooms.html">Home</a></li>
-                    <li><a href="FAQs_Leasing.html">Products</a></li>
-                    <li><a href="Location.html">About</a></li>
-                </ul>
+        <button class="navbar-toggler me-3"type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse me-3" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto " style="color: #dfdfdf;" >
+                <b><a class="nav-item nav-link navbut ms-3" style="color: #dfdfdf; font-size: 20px; " href="Rooms.html">ROOM</a></b>
+                <b><a class="nav-item nav-link ms-3 navbut" style="color: #dfdfdf; font-size: 20px; " href="Location.html">LOCATION</a></b>
+                <b><a class="nav-item nav-link ms-3 navbut" style="color: #dfdfdf; font-size: 20px; " href="FAQs_Leasing.html">FAQs</a></b>
             </div>
-    </header>
+        </div>
+    </nav> 
 
-    <script src="menu.js"></script>
- 
-    <body>
-        <div id="page-container" style="overflow: hidden;">
-
-
-            <div id="content-wrap">
-                <img src="Images/shapesRight.png" style="position: absolute; z-index: -1; object-fit: fill; right: -60px;  width: 12%;"/>
-                <img src="Images/shapesLeft.png" style="position: absolute; z-index: -1; object-fit: fill; left: -60px;  width: 12%; top: 25%;"/>
-                <img src="Images/shapesRight.png" style="position: absolute; z-index: -1; object-fit: fill; right: -60px;  width: 12%; top: 50%"/>
-                <div style="position: relative; overflow: hidden;">
-                    <div style="float:left; width: 40%; margin-left: 10%; margin-top: 2%;">
-
-                        <div style="margin-bottom: 100px;">
-                            <p style="font-size: 20px;">
-                                <b style="font-size: 40px;">Why choose us</b> <br>
-                                At S-Space Dormitel, we are not just a corporate stay; we are your gateway to a
-                                thriving community and a comfortable living experience
-                            </p>
-                        </div>
-                        
-                        <div style="float: left; width: 45%; ">
-                            <img src="Images/security.svg" alt="security and Safety pic" style="width: 75px; float: left; "/>
-                            
-                            <p style="font-size: 20px; width: 80%; margin-top: 5px; margin-left: 85px; margin-right: 5%; position: relative;">
+    <body style="background-color: #dedede;">
+        <div class="row ms-5 me-5 mt-3 mb-3 ">
+            <div class="col-md-6 text-start mt-3">
+                <p style="font-size: 40px; font-weight: bold;">
+                    Why choose us
+                </p>
+                <p style="font-size: 20px;">
+                    At S-Space Dormitel, we are not just a corporate stay; we are your gateway to a thriving community and a comfortable living experience
+                </p>
+                <img src="Images/west_rembo.jpg" alt="gate" style="width: 100%; height: 550px; object-fit: cover;"/>
+            </div>
+            <div class="col-md-6 text-start mt-3" style=" display: flex; align-items: center;">
+                <div>
+                    <div class="row ">
+                        <div class="col-md-6 d-flex align-items-start mt-1 mb-1 ">
+                            <img src="Images/security.svg" alt="security and Safety pic" style="width: 75px;" class="me-2">
+                            <p style="font-size: 20px; position: relative;">
                                 <b>Security and Safety</b><br>
                                 Prioritize your safety with robust security measures
                             </p>
                         </div>
-                        
-                        <div style="float: left; width: 45%; margin-left: 5%; ">
-                            <img src="Images/corporate.svg" alt="Corporate-Focused" style="width: 75px; float: left;"/>
-                            <p style="font-size: 20px; width: 80%; margin-top: 5px; margin-left: 85px; margin-right: 5%; position: relative;">
+                        <div class="col-md-5 d-flex align-items-start mt-1 mb-1 ms-1 me-1">
+                            <img src="Images/corporate.svg" alt="security and Safety pic" style="width: 75px;"  class="me-2">
+                            <p style="font-size: 20px; position: relative;">
                                 <b>Corporate-Focused Amenities</b><br>
                                 Tailored for corporate clients, our building offers essential amenities for productivity.
                             </p>
                         </div>
-
-                        <div style="float: left; width: 45%; ">
-                            <img src="Images/unbeatable.svg" alt="security and Safety pic" style="width: 75px; float: left;"/>
-                            <p style="font-size: 20px; width: 80%; margin-top: 5px; margin-left: 85px; margin-right: 5%; position: relative;">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 d-flex align-items-start mt-1 mb-1">
+                            <img src="Images/security.svg" alt="security and Safety pic" style="width: 75px;" class="me-2">
+                            <p style="font-size: 20px; position: relative;">
                                 <b>Unbeatable Affordability</b><br>
                                 Whether article spirits new her covered.
                             </p>
                         </div>
-                        
-                        <div style="float: left; width: 45%; margin-left: 5%; ">
-                            <img src="Images/strategic.svg" alt="Corporate-Focused" style="width: 75px; float: left; "/>
-                            <p style="font-size: 20px; width: 80%; margin-top: 5px; margin-left: 85px; margin-right: 5%; position: relative;">
+                        <div class="col-md-5 d-flex align-items-start mt-1 mb-1 ms-1 me-1">
+                            <img src="Images/corporate.svg" alt="security and Safety pic" style="width: 75px;"  class="me-2">
+                            <p style="font-size: 20px; position: relative;">
                                 <b>Strategic Location</b><br>
                                 Enjoy a 5-15 minute walk to BGC and Pasig, placing you at the heart of the action.
                             </p>
                         </div>
                     </div>
-
-                    <div style="width: 40%;  margin-top: 2%; margin-right: 10%; float: right; margin-bottom: 80px; ">
-                        <img src="Images/gate_pic.jpg" alt="gate" style="width: 100%; height: 550px; object-fit: cover;"/>
-                    </div>
                 </div>
-                
-                <div style="position: relative; overflow: hidden;">
-                    <div style="float:left; width: 35%; margin-left: 10%; margin-top: 1%;">
-                        <div style="position: relative; margin-bottom: 100px;">
-                            <p style="font-size: 20px;">
-                                <b style="font-size: 40px;">About Us</b> <br>
-                                At S-Space Dormitel, we redefine corporate living. Offering a full building for rent, we cater to the needs of Corporate Clients seeking convenience and comfort. Our prime location ensures a quick 5-15 minute commute to BGC and Pasig, placing you at the heart of business and leisure.<br>
-                            </p>
-                            <p style="font-size: 20px;">
-                                <b >1 Elevating Corporate Living</b><br>
-                                Redefining corporate living with full building rentals for Corporate Clients, just a 5-15 min walk to BGC and Pasig.<br>
-                            </p>
-                            <p style="font-size: 20px;">
-                                <b>2 Affordable Luxury:</b><br>
-                                Experience unbeatable value at S-Space Dormitel, from housekeeping to concierge services, prioritizing your comfort.<br>
-                            </p>
-                            <p style="font-size: 20px;">
-                                <b>3 Community Hub</b><br>
-                                S-Space Dormitel is more than a residence; it's a community hub where professionals connect, collaborate, and thrive together.<br>
-                            </p>
-                            <p style="font-size: 20px;">
-                                <b>4 Proximity to Passion</b><br>
-                                Live closer to your passions with our prime Makati City location, a stone's throw away from work, retail, and lush parks.<br>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div style="width: 40%;  margin-top: 1%; margin-right: 10%; float: right;">
-                        <div style="width: 200px; position: relative; height: 200px; background-color: #b32b2f; border-radius: 6px; margin-bottom: -85px; z-index: -1;"></div>
-                        <img src="Images/guada_roof.JPG" alt="gate" style="width: 75%; object-fit: cover; height:700px; margin-left: 12.5%; margin-bottom: 12.5%; "/>
-                        <div style="width: 200px; margin-top: -25%; margin-left: 70%; position: relative; height: 200px; background-color: #b32b2f; border-radius: 6px;"></div>
-                    </div>
-                </div>
-                
-
-                <div style="position: relative; overflow: hidden;">
-                    <center><b style="font-size: 40px;">Reviews</b></center>    
-                    <hr style="width:15%; height:2px; border-width:0; background-color:#707070; margin-bottom: 120px;"> 
-                    <div style="position: relative; margin-top: -100px; float: left; width: 20%; height: 413px; padding: 2.5%; background-color: #ffffff; margin-left: 10%; font-size: 25px;">
-                        <center>
-                            <img src="Images/comma.svg" alt="comma"/>
-                        </center>
-                        <p style="text-align: center; font-size: 100%;">
-                            S-Space Dormitel is an ideal choice for individuals and corporate clients due to its strategic location in Makati City, offering full building rentals. The proximity to Bonifacio Global City (BGC) and Pasig, within a 5-15 minute walk, makes it a convenient option for those working or doing business in these areas.
-                        </p>
-                    </div>
-                    <div style="position: relative; margin-top: -80px; float: left; width: 20%; height: 413px; padding: 2.5%; background-color: #b3282f; font-size: 25px; margin-left: 2%; margin-right: 2%; ">
-                        <center>
-                            <img src="Images/comma_white.svg" alt="comma white"/>
-                        </center>
-                        <p style="text-align: center; color: #dedede;">
-                            S-Space Dormitel provides attractive monthly promo rates for its accommodations. For instance, the posted rates include PHP3,500 per person for upper beds and PHP4,000 per person for lower beds in 6PAX units. Additionally, there's a promo rate of PHP5,500 per person for 4PAX units, making it a cost-effective choice for budget-conscious individuals.
-                        </p>
-                    </div>
-                    <div style="position: relative; margin-top: -100px; float: left; width: 20%; height: 413px; padding: 2.5%; background-color: #ffffff; font-size: 25px; margin-right: 10%;">
-                        <center>
-                            <img src="Images/comma.svg" alt="comma"/>
-                        </center>
-                        <p style="text-align: center;">
-                            S-Space Dormitel offers flexibility with various room configurations, such as 6PAX and 4PAX units. This versatility allows potential residents to choose the accommodation option that best suits their preferences and needs. Whether individuals prefer a larger shared space or a more private setting, the dormitory caters to a diverse range of preferences.
-                        </p>
-                    </div>
-                    <br>
-                </div>
-
-                
             </div>
-                <footer class="footerFAQ">
-                    <center>
-                        <div class="logoDiv" style="margin-top: 20px; align-content: center; ">
-                            <img class="logoNav" src="Images/logo.png" alt="logo" style="width: 120px; margin-left: -230px;" />
-                            <p2 style="font-size: 40px; color: #1f2937; font-family: 'Gill Sans MT'; margin-left: 10px;">S-SPACE</p2>
-                            <p2 style="font-size: 40px; color: #1f2937; font-family: 'Gill Sans MT'; margin-left: 10px; margin-top: 35px;">DORMITEL</p2>
-                        </div>
-                    </center>
-                    
-                    <div style="position: relative; margin-top: -20px;">
-                        <p style="font-size: 23px; float: left; margin-left: 10%;">
-                                <b>Location</b> <br>
-                                <b>- West Rembo Branch</b>: 54 JP Rizal Extension , West Rembo Makati City   <br>
-                                <b>- Guadalupe Branch</b>: 1643 Camino Dela Fe, Makati, 1212 Kalakhang Maynila<br>
-                        </p>  
-    
-                        <p style="font-size: 23px; float: right; margin-right: 10%;">
-                            <b>Contact Us</b> <br>
-                                0917-651-6929<br>
-                                sspacedormitel@gmail.com<br>
-                        </p> 
-                        
-                    </div>
-                    <center style="margin-top: 160px; font-size: 23px;">2023. All Rights Reserved</center>
-                </footer>
         </div>
+        <div class="row ms-5 me-5 mt-3 mb-3">
+            <div class="col-sm">
+                <p style="font-size: 20px;">
+                    <b style="font-size: 40px;">About Us</b> <br>
+                    At S-Space Dormitel, we redefine corporate living. Offering a full building for rent, we cater to the needs of Corporate Clients seeking convenience and comfort. Our prime location ensures a quick 5-15 minute commute to BGC and Pasig, placing you at the heart of business and leisure.<br>
+                </p>
+                <p style="font-size: 20px;">
+                    <b >1 Elevating Corporate Living</b><br>
+                    Redefining corporate living with full building rentals for Corporate Clients, just a 5-15 min walk to BGC and Pasig.<br>
+                </p>
+                <p style="font-size: 20px;">
+                    <b>2 Affordable Luxury:</b><br>
+                    Experience unbeatable value at S-Space Dormitel, from housekeeping to concierge services, prioritizing your comfort.<br>
+                </p>
+                <p style="font-size: 20px;">
+                    <b>3 Community Hub</b><br>
+                    S-Space Dormitel is more than a residence; it's a community hub where professionals connect, collaborate, and thrive together.<br>
+                </p>
+                <p style="font-size: 20px;">
+                    <b>4 Proximity to Passion</b><br>
+                    Live closer to your passions with our prime Makati City location, a stone's throw away from work, retail, and lush parks.<br>
+                </p>
+            </div>
+            <div class="col-sm" style=" display: flex; align-items: center;">
+                    <img src="Images/guada_roof.JPG" alt="gate" style="width: 100%; object-fit: cover; height:700px;"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="justify-content-center ms-3 me-3 mt-5 mb-3">
+            <center>
+                <p style="font-size: 40px; font-weight: bold;">REVIEWS</p>
+                <hr style="width:85%; height:3px; border-width:0; background-color:#1a1a1a;">
+            </center>
+        </div>
+
+
+        <div class="container">
+            <div class="row row ms-3 me-3 mt-3 mb-3">
+                <div class="col-sm mb-2 overflow-hidden me-2 ms-1" style="background-color: #ffffff;">
+                    <center>
+                        <img src="Images/comma.svg" alt="comma" class="mb-4 mt-2"/>
+                    </center>
+                    <p style="text-align: center; font-size: 20px; ">
+                        S-Space Dormitel is an ideal choice for individuals and corporate clients due to its strategic location in Makati City, offering full building rentals. The proximity to Bonifacio Global City (BGC) and Pasig, within a 5-15 minute walk, makes it a convenient option for those working or doing business in these areas.
+                    </p>
+                </div>
+                <div class="col-sm mb-4 overflow-hidden mt-4 me-1 ms-1" style="background-color: #b3282f;">
+                    <center>
+                        <img src="Images/comma_white.svg" alt="comma white" class="mb-4 mt-2"/>
+                    </center>
+                    <p style="text-align: center; color: #dedede; font-size: 20px;">
+                        S-Space Dormitel provides attractive monthly promo rates for its accommodations. For instance, the posted rates include PHP3,500 per person for upper beds and PHP4,000 per person for lower beds in 6PAX units. Additionally, there's a promo rate of PHP5,500 per person for 4PAX units, making it a cost-effective choice for budget-conscious individuals.
+                    </p>
+                </div>
+                <div class="col-sm mb-2 overflow-hidden me-1 ms-2" style="background-color: #ffffff;">
+                    <center> 
+                        <img src="Images/comma.svg" alt="comma" class="mb-4 mt-2"/>
+                    </center>
+                    <p style="text-align: center; font-size: 20px;">
+                        S-Space Dormitel offers flexibility with various room configurations, such as 6PAX and 4PAX units. This versatility allows potential residents to choose the accommodation option that best suits their preferences and needs. Whether individuals prefer a larger shared space or a more private setting, the dormitory caters to a diverse range of preferences.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-white text-center" >
+            <div class="container-fluid d-flex justify-content-center">
+                <img src="Images/logo.png" alt="" width="100">
+                <b><p class="mb-1 ms-2 logoPara" style="margin-bottom: -10px; color:#1a1a1a">S-SPACE</p>
+                <p class="mb-1 ms-2 logoPara" style="margin-top: -15px; color:#1a1a1a">DORMITEL</p></b>
+            </div>
+
+            <div class="container p-2" style="font-size: 23px; color:#1a1a1a">
+                <div class="row mt-4">
+    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <b><p class="text-uppercase mb-4">Location</p></b>
+            
+                    <p>
+                        <b>West Rembo Branch:</b> 
+                        54 JP Rizal Extension , West Rembo Makati City 
+                    </p>
+            
+                    <p>
+                        <b>Guadalupe Branch:</b> 
+                        1643 Camino Dela Fe, Makati, 1212 Kalakhang Maynila
+                    </p>
+            
+                    </div>
+    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <b><p class="text-uppercase mb-4 pb-1">Contact Us</p></b>
+                            <p>0917-651-6929</p>
+                            <p>sspacedormitel@gmail.com</p>
+                    </div>
+            </div>
+            
+            <div class="text-center p-3" style="background-color: #dedede; color:#1a1a1a">
+                © 2024 All Right Reserved
+            </div>
+        </footer>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button> 
         <script>
+            let mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+
+            function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0;
+            } 
+        </script>
+         <script>
             var loader = document.getElementById("preloader");
             
             window.addEventListener("load", function() {
@@ -198,5 +212,4 @@
 
         </script>
     </body>
-
-</html>
+</html> 
