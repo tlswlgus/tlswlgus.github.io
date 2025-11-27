@@ -10,6 +10,8 @@ Websites:
   <button>S-Space Boot</button>
 </a>
 
+<br>
+
 <a href="https://tlswlgus.github.io/Chippy/index.html">
-  <button>S-Space Boot</button>
+  <button>Chippy</button>
 </a>
