@@ -1,49 +1,105 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Chippy's GameBox — Download</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <img src="VER3MAINMENUSCREEN.gif" alt="Main Menu GIF">
-  <p>A pocket-sized arcade of fast 2D mini-games for Android.</p>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img src="small_icon.png" alt="Chippy icon" class="brand-icon" width="56" height="56">
+        <div>
+          <h1>Chippy's GameBox</h1>
+          <p class="tagline">A pocket-sized arcade of fast 2D mini-games for Android.</p>
+        </div>
+      </div>
+    </header>
 
-  <h2>About the Game</h2>
-  <p>Chippy's GameBox collects quick mini-games like Catch, Dash, and Ping-Pong into short, replayable sessions. Each session randomly selects three mini-games for varied, competitive fun.</p>
+    <main>
+      <section class="hero card">
+        <div class="hero-left">
+          <h2>About the game</h2>
+          <p>Chippy's GameBox collects quick mini-games like Catch, Dash, and Ping-Pong into short, replayable sessions. Each session randomly selects three mini-games for varied, competitive fun.</p>
 
-  <h3>Features</h3>
-  <ul>
-    <li>Randomized mini-games every session</li>
-    <li>Smart AI with balanced challenge</li>
-    <li>Single-player & Dual-player local play</li>
-    <li>Retro 8-bit pixel art and chiptune sound</li>
-  </ul>
+          <h3>Features</h3>
+          <ul>
+            <li>Randomized mini-games every session</li>
+            <li>Smart AI with balanced challenge</li>
+            <li>Single-player & Dual-player local play</li>
+            <li>Retro 8-bit pixel art and chiptune sound</li>
+          </ul>
 
-  <h2>Download</h2>
-  <p>
-    <a href="<Put link here>">Download APK</a><br>
-  </p>
+          <div class="meta">
+            <div><strong>Platform:</strong> Android</div>
+            <div><strong>Modes:</strong> Single-player & Dual-player</div>
+            <div><strong>Connectivity:</strong> Offline</div>
+          </div>
+        </div>
 
-  <h3>Images</h3>
-  <img src="Logo_Catch.png" alt="Screenshot 1" width="200">
-  <img src="logo_Dash.png" alt="Screenshot 2" width="200">
-  <img src="logo_Dodge.png" alt="Screenshot 3" width="200">
-  <img src="logo_Pong.png" alt="Screenshot 4" width="200">
-  
-  <h2>Quick Facts</h2>
-  <ul>
-    <li>Platform: Android</li>
-    <li>Art style: 8-bit pixel</li>
-    <li>Modes: Single-player & Dual-player</li>
-    <li>Connectivity: Offline</li>
-  </ul>
+        <aside class="hero-right">
+          <img src="VER3MAINMENUSCREEN.gif" alt="Main menu animation" class="hero-gif" width="320" />
 
-  <footer>
-    <p>© Chippy's GameBox. All rights reserved.</p>
-  </footer>
+          <div class="download">
+            <a class="btn primary" href="<Put link here>">Download APK</a>
+            <a class="btn outline" href="<Put link here>">View on GitHub</a>
+
+            <div class="apk-meta">
+              <div>Minimum Android: 6.0</div>
+              <div>Size: <span id="apk-size">--</span></div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="card games">
+        <h3>Some of our games</h3>
+        <div class="game-grid" aria-label="Game logos">
+          <figure>
+            <img src="Logo_Catch.png" alt="Catch logo" width="200">
+            <figcaption>Catch</figcaption>
+          </figure>
+          <figure>
+            <img src="Logo_Dash.png" alt="Dash logo" width="200">
+            <figcaption>Dash</figcaption>
+          </figure>
+          <figure>
+            <img src="Logo_Dodge.png" alt="Dodge logo" width="200">
+            <figcaption>Dodge</figcaption>
+          </figure>
+          <figure>
+            <img src="Logo_Pong.png" alt="Pong logo" width="200">
+            <figcaption>Ping-Pong</figcaption>
+          </figure>
+          <figure>
+            <img src="Logo_TTT.png" alt="Tic Tac Toe logo" width="200">
+            <figcaption>Tic Tac Toe</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="card quick-facts">
+        <h3>Quick facts</h3>
+        <ul>
+          <li>Art style: 8-bit pixel</li>
+          <li>Sound: Chiptune effects</li>
+          <li>Platform: Android (APK)</li>
+          <li>Modes: Local PvP & single player</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© Chippy's GameBox. All rights reserved.</p>
+      <p class="muted">Replace <code>&lt;Put link here&gt;</code> with the actual download/GitHub link before publishing.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Optional: set APK size dynamically if you want
+    // document.getElementById('apk-size').textContent = '12.3 MB';
+  </script>
 </body>
 </html>
-
-
