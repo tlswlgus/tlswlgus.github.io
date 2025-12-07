@@ -5,93 +5,130 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Chippy's GameBox — Download</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="crt-overlay"></div>
 
-  <div class="container">
-    <header class="site-header">
-      <div class="brand">
-        <img src="small_icon.png" alt="Chippy icon" class="brand-icon" width="56" height="56">
-        <div>
-          <h1 class="pixel-title">Chippy's GameBox</h1>
-          <p class="tagline">A pocket-sized arcade of fast 2D mini-games for Android.</p>
-        </div>
+  <!-- ARCADE FRAME -->
+  <div class="arcade-frame">
+    <div class="arcade-top">
+      <span class="arcade-label">CHIPPY ARCADE SYSTEM • v2.0.0</span>
+    </div>
+
+    <!-- CRT SCREEN -->
+    <div class="crt">
+      <div class="crt-scanlines"></div>
+      <div class="crt-glow"></div>
+
+      <div class="container">
+
+        <header class="site-header">
+          <div class="brand">
+            <img src="small_icon.png" alt="Chippy icon" class="brand-icon" width="56" height="56">
+            <div>
+              <h1 class="pixel-title">Chippy's GameBox</h1>
+              <p class="tagline">A pocket-sized arcade of fast mini-games.</p>
+            </div>
+          </div>
+        </header>
+
+        <main>
+
+          <!-- HERO -->
+          <section class="hero card pixel-border">
+            <div class="hero-left">
+              <h2 class="pixel-h2">About the game</h2>
+              <p>
+                Chippy's GameBox collects fast-paced mini-games like Catch, Dash, and Ping-Pong into short, replayable sessions.
+                Every session selects three unique games for nonstop arcade fun.
+              </p>
+
+              <h3 class="pixel-h3">Features</h3>
+              <ul class="pixel-list">
+                <li>Randomized mini-game sessions</li>
+                <li>Retro pixel-art & chiptune audio</li>
+                <li>Single-player & dual-player modes</li>
+                <li>Smart AI that feels human</li>
+              </ul>
+
+              <div class="meta pixel-meta">
+                <div><strong>Platform:</strong> Android</div>
+                <div><strong>Modes:</strong> Single-player & Dual-player</div>
+                <div><strong>Offline:</strong> Yes</div>
+              </div>
+            </div>
+
+            <aside class="hero-right">
+              <img src="VER3MAINMENUSCREEN.gif" alt="Main menu animation" class="hero-gif pixel-border" />
+
+              <div class="download">
+                <a class="pixel-btn pixel-blue" href="https://github.com/tlswlgus/tlswlgus.github.io/releases/download/Chippy's_Gamebox_v2.0.0/Gamebox_v2.0.0-beta.apk">DOWNLOAD APK</a>
+              </div>
+            </aside>
+          </section>
+
+          <!-- GAMES -->
+          <section class="card games pixel-border">
+            <h3 class="pixel-h3">Game Selection</h3>
+            <div class="game-grid">
+              <figure>
+                <img src="Logo_Catch.png" alt="Catch logo">
+                <figcaption>Catch</figcaption>
+              </figure>
+              <figure>
+                <img src="Logo_Dash.png" alt="Dash logo">
+                <figcaption>Dash</figcaption>
+              </figure>
+              <figure>
+                <img src="Logo_Dodge.png" alt="Dodge logo">
+                <figcaption>Dodge</figcaption>
+              </figure>
+              <figure>
+                <img src="Logo_Pong.png" alt="Pong logo">
+                <figcaption>Ping-Pong</figcaption>
+              </figure>
+              <figure>
+                <img src="Logo_TTT.png" alt="Tic Tac Toe logo">
+                <figcaption>Tic Tac Toe</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- QUICK FACTS -->
+          <section class="card quick-facts pixel-border">
+            <h3 class="pixel-h3">Quick Facts</h3>
+            <ul class="pixel-list">
+              <li>8-bit pixel style</li>
+              <li>Chiptune effects</li>
+              <li>Offline play</li>
+              <li>Shared-device multiplayer</li>
+            </ul>
+          </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+          <p class="pixel-footer">© 2025 Chippy's GameBox</p>
+          <p class="pixel-footer small">Licensed under the Custom Game Asset License (see below).</p>
+        </footer>
+
       </div>
-    </header>
+    </div>
 
-    <main>
-      <section class="hero card">
-        <div class="hero-left">
-          <h2 class="section-title">About the game</h2>
-          <p>Chippy's GameBox collects quick mini-games like Catch, Dash, and Ping-Pong into short, replayable sessions. Each session randomly selects three mini-games for varied, competitive fun.</p>
+    <!-- ARCADE BUTTONS -->
+    <div class="arcade-buttons">
+      <div class="btn-row">
+        <div class="arc-btn red"></div>
+        <div class="arc-btn yellow"></div>
+        <div class="arc-btn green"></div>
+        <div class="arc-btn blue"></div>
+      </div>
+    </div>
 
-          <h3 class="section-sub">Features</h3>
-          <ul>
-            <li>Randomized mini-games every session</li>
-            <li>Smart AI with balanced challenge</li>
-            <li>Single-player & Dual-player local play</li>
-            <li>Retro 8-bit pixel art and chiptune sound</li>
-          </ul>
-
-          <div class="meta">
-            <div><strong>Platform:</strong> Android</div>
-            <div><strong>Modes:</strong> Single-player & Dual-player</div>
-            <div><strong>Connectivity:</strong> Offline</div>
-          </div>
-        </div>
-
-        <aside class="hero-right">
-          <div class="crt-frame">
-            <img src="VER3MAINMENUSCREEN.gif" alt="Main menu animation" class="hero-gif" />
-          </div>
-
-          <div class="download">
-            <a class="btn pixel-btn blue-btn" href="https://github.com/tlswlgus/tlswlgus.github.io/releases/download/Chippy's_Gamebox_v2.0.0/Gamebox_v2.0.0-beta.apk">Download APK</a>
-          </div>
-        </aside>
-      </section>
-
-      <section class="card games">
-        <h3 class="section-title">Some of our games</h3>
-        <div class="game-grid" aria-label="Game logos">
-          <figure>
-            <img src="Logo_Catch.png" alt="Catch logo">
-            <figcaption>Catch</figcaption>
-          </figure>
-          <figure>
-            <img src="Logo_Dash.png" alt="Dash logo">
-            <figcaption>Dash</figcaption>
-          </figure>
-          <figure>
-            <img src="Logo_Dodge.png" alt="Dodge logo">
-            <figcaption>Dodge</figcaption>
-          </figure>
-          <figure>
-            <img src="Logo_Pong.png" alt="Pong logo">
-            <figcaption>Ping-Pong</figcaption>
-          </figure>
-          <figure>
-            <img src="Logo_TTT.png" alt="Tic Tac Toe logo">
-            <figcaption>Tic Tac Toe</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="card quick-facts">
-        <h3 class="section-title">Quick facts</h3>
-        <ul>
-          <li>Art style: 8-bit pixel</li>
-          <li>Sound: Chiptune effects</li>
-          <li>Platform: Android (APK)</li>
-          <li>Modes: Local PvP & single player</li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <p>© Chippy's GameBox. All rights reserved.</p>
-    </footer>
   </div>
+
 </body>
 </html>
