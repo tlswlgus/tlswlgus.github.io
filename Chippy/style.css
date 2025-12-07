@@ -71,17 +71,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(8px, 2vw, 24px);
+  padding: clamp(4px, 1vw, 16px);
 }
 
 /* New smart responsive width logic */
 .console-shell {
-  width: clamp(
-    380px,            /* Minimum size on tiny phones */
-    92vw,             /* Typical size on mobile & laptops */
-    1300px            /* Maximum size for large desktops */
-  );
-
+  width: clamp(360px, 95vw, 1200px);
   background: linear-gradient(180deg, var(--shell-gray), #c1c5ce);
   border-radius: 28px;
   padding: clamp(12px, 1.8vw, 22px);
@@ -640,4 +635,5 @@ jack-green { background: #7fff7a; }
     font-size: 7px;
   }
 }
+
 
