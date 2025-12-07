@@ -67,19 +67,19 @@
               <ul class="pixel-list hero-bullets">
                 <li>Fast, pick-up-and-play matches</li>
                 <li>Face-off with a friend on one device</li>
-                <li>8-bit pixel art &amp; retro sound</li>
+                <li>8-bit pixel art & retro sound</li>
                 <li>Smart but fair AI for solo play</li>
               </ul>
 
               <div class="pixel-meta">
                 <span>Platform: Android</span>
-                <span>Modes: Single-player (PvE) &amp; Dual-player (PvP)</span>
-                <span>Connection: Offline &amp; shared-device friendly</span>
+                <span>Modes: Single-player (PvE) & Dual-player (PvP)</span>
+                <span>Connection: Offline & shared-device friendly</span>
               </div>
 
               <!-- Main CTA inside hero -->
               <a class="pixel-btn primary-download"
-                 href="https://github.com/tlswlgus/tlswlgus.github.io/releases/download/Chippy's_Gamebox_v2.0.0/Gamebox_v2.0.0-beta.apk">
+                 href="Gamebox_v2.0.0-beta.apk">
                 DOWNLOAD APK
               </a>
             </div>
@@ -96,7 +96,7 @@
 
           <!-- VARIETY & REPLAYABILITY -->
           <section class="panel">
-            <h3 class="panel-title section-label">Variety &amp; Replayability</h3>
+            <h3 class="panel-title section-label">Variety & Replayability</h3>
             <p class="body-text">
               No two sessions are ever the same. Each playthrough randomly selects
               <strong>three unique mini-games</strong> from Chippy’s library, giving you new
@@ -121,14 +121,11 @@
               for example, Chippy’s AI tracks the ball with just enough human-like
               imperfection to feel challenging without being impossible.
             </p>
-            <p class="body-text">
-              The random selection system is tuned so that:
-            </p>
             <ul class="pixel-list">
               <li>Game combos feel unique instead of repetitive</li>
               <li>Difficulty ramps in a fair, readable way</li>
               <li>Each mini-game has room to shine in different lineups</li>
-              <li>Sessions feel “fresh but familiar” every time</li>
+              <li>Sessions feel fresh every time</li>
             </ul>
           </section>
 
@@ -141,6 +138,21 @@
               easy to play on the couch, and satisfying when you start chasing better
               scores or trying to out-think Chippy’s AI patterns.
             </p>
+          </section>
+
+          <!-- SOUND FX PANEL -->
+          <section class="panel sfx-panel">
+            <h3 class="panel-title section-label">Sound FX Preview</h3>
+            <p class="body-text">Listen to the retro sound effects used in Chippy’s GameBox.</p>
+
+            <div class="sfx-buttons">
+              <button class="sfx-btn" data-sound="Catch.wav">Catch</button>
+              <button class="sfx-btn" data-sound="Dasher.wav">Dash</button>
+              <button class="sfx-btn" data-sound="Dodge.wav">Dodge</button>
+              <button class="sfx-btn" data-sound="Pong.wav">Ping-Pong</button>
+              <button class="sfx-btn" data-sound="TicTacToe.wav">Tic Tac Toe</button>
+              <button class="sfx-btn" data-sound="Game_Menu.wav">Menu Click</button>
+            </div>
           </section>
 
           <!-- GAME GRID -->
@@ -177,21 +189,22 @@
               <li>Art Style: 8-bit pixel retro</li>
               <li>Sound: Nostalgic chiptune effects</li>
               <li>Platform: Android</li>
-              <li>Modes: Single-player (PvE) &amp; Dual-player (PvP)</li>
+              <li>Modes: Single-player & Dual-player</li>
               <li>Connectivity: Offline, shared-device multiplayer</li>
             </ul>
           </section>
 
-          <!-- FINAL THOUGHT / BOTTOM CTA -->
+          <!-- FINAL CTA -->
           <section class="panel bottom-cta">
             <h3 class="panel-title section-label">Ready to play?</h3>
             <p class="body-text">
-              Chippy’s GameBox is a pocket-sized arcade adventure that celebrates
-              creativity, fairness, and good old-fashioned fun. Grab your device,
-              call a friend, and let Chippy guide you through endless mini-game madness.
+              Chippy’s GameBox is a pocket-sized arcade adventure built around
+              creativity, fairness, and fun. Grab your device, call a friend,
+              and jump into the action!
             </p>
+
             <a class="pixel-btn primary-download"
-               href="https://github.com/tlswlgus/tlswlgus.github.io/releases/download/Chippy's_Gamebox_v2.0.0/Gamebox_v2.0.0-beta.apk">
+               href="Gamebox_v2.0.0-beta.apk">
               DOWNLOAD APK
             </a>
           </section>
@@ -208,13 +221,13 @@
       </div>
     </div>
 
-    <!-- Console controls / deco strip -->
+    <!-- Console controls -->
     <div class="console-controls">
       <div class="control-row buttons-row">
         <button id="sound-toggle" class="sound-btn">SOUND: OFF</button>
         <div class="status-led led-blue"></div>
         <div class="status-led led-green"></div>
-        <div class="status-led led-red"></div>
+        <div class="status-led led-red active"></div>
       </div>
 
       <div class="control-row sliders-row">
@@ -232,10 +245,11 @@
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- Placeholder audio: replace src with your file -->
+<!-- Background music placeholder -->
 <audio id="bgm" loop src="INSERT_SOUND_HERE"></audio>
 
 <script src="script.js"></script>
