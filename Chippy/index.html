@@ -11,6 +11,14 @@
 
 <body>
 
+<!-- Boot Screen -->
+<div id="boot-screen">
+  <div class="boot-text">CHIPPY ARCADE SYSTEM<br>BOOTING...</div>
+</div>
+
+<!-- Responsive Wrapper -->
+<div class="arcade-wrapper">
+
   <!-- ARCADE FRAME -->
   <div class="arcade-frame">
 
@@ -25,12 +33,11 @@
 
       <div class="container">
 
-        <!-- HEADER -->
         <header class="site-header">
           <div class="brand">
             <img src="small_icon.png" alt="Chippy icon" class="brand-icon" width="56" height="56">
             <div>
-              <h1 class="pixel-title">Chippy's GameBox</h1>
+              <h1 class="pixel-title shimmer">Chippy's GameBox</h1>
               <p class="tagline">A pocket-sized arcade of fast mini-games.</p>
             </div>
           </div>
@@ -38,13 +45,13 @@
 
         <main>
 
-          <!-- HERO SECTION -->
+          <!-- HERO -->
           <section class="hero card pixel-border">
             <div class="hero-left">
               <h2 class="pixel-h2">About the game</h2>
               <p>
-                Chippy's GameBox collects fast-paced mini-games like Catch, Dash, and Ping-Pong into short,
-                replayable sessions. Every session selects three unique games for nonstop arcade fun.
+                Chippy's GameBox collects fast-paced mini-games like Catch, Dash, and Ping-Pong into short, replayable sessions.
+                Every session selects three unique games for nonstop arcade fun.
               </p>
 
               <h3 class="pixel-h3">Features</h3>
@@ -66,45 +73,37 @@
               <img src="VER3MAINMENUSCREEN.gif" alt="Main menu animation" class="hero-gif pixel-border" />
 
               <div class="download">
-                <a class="pixel-btn pixel-blue"
-                  href="https://github.com/tlswlgus/tlswlgus.github.io/releases/download/Chippy's_Gamebox_v2.0.0/Gamebox_v2.0.0-beta.apk">
+                <a class="pixel-btn pixel-blue" href="https://github.com/tlswlgus/tlswlgus.github.io/releases/download/Chippy's_Gamebox_v2.0.0/Gamebox_v2.0.0-beta.apk">
                   DOWNLOAD APK
                 </a>
               </div>
             </aside>
           </section>
 
-          <!-- GAME SELECTION -->
+          <!-- GAMES -->
           <section class="card games pixel-border">
             <h3 class="pixel-h3">Game Selection</h3>
-
             <div class="game-grid">
-
               <figure>
                 <img src="Logo_Catch.png" alt="Catch logo">
                 <figcaption>Catch</figcaption>
               </figure>
-
               <figure>
                 <img src="Logo_Dash.png" alt="Dash logo">
                 <figcaption>Dash</figcaption>
               </figure>
-
               <figure>
                 <img src="Logo_Dodge.png" alt="Dodge logo">
                 <figcaption>Dodge</figcaption>
               </figure>
-
               <figure>
                 <img src="Logo_Pong.png" alt="Pong logo">
                 <figcaption>Ping-Pong</figcaption>
               </figure>
-
               <figure>
                 <img src="Logo_TTT.png" alt="Tic Tac Toe logo">
                 <figcaption>Tic Tac Toe</figcaption>
               </figure>
-
             </div>
           </section>
 
@@ -125,6 +124,7 @@
         <footer>
           <p class="pixel-footer">© 2025 Chippy's GameBox</p>
           <p class="pixel-footer small">
+            Licensed under the Custom Game Asset License.
             <a href="LICENSE" class="license-link">View License</a>
           </p>
         </footer>
@@ -135,14 +135,22 @@
     <!-- ARCADE BUTTONS -->
     <div class="arcade-buttons">
       <div class="btn-row">
-        <div class="arc-btn red"></div>
-        <div class="arc-btn yellow"></div>
-        <div class="arc-btn green"></div>
-        <div class="arc-btn blue"></div>
+        <div class="arc-btn red ripple"></div>
+        <div class="arc-btn yellow ripple"></div>
+        <div class="arc-btn green ripple"></div>
+        <div class="arc-btn blue ripple"></div>
       </div>
     </div>
 
   </div>
+</div>
+
+<script>
+  setTimeout(() => {
+    document.getElementById("boot-screen").style.opacity = "0";
+    setTimeout(() => (document.getElementById("boot-screen").style.display = "none"), 600);
+  }, 1300);
+</script>
 
 </body>
 </html>
