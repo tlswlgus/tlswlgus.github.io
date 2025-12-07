@@ -417,6 +417,43 @@ body {
   filter: brightness(1.04);
 }
 
+/* =========================================================
+   SOUND FX PANEL
+========================================================= */
+.sfx-panel {
+  text-align: center;
+}
+
+.sfx-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.sfx-btn {
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+  padding: 8px 14px;
+  background: #e9ecf2;
+  border-radius: 8px;
+  border: 3px solid #50545f;
+  color: #22252c;
+  box-shadow: 0 3px #9a9ea8, 0 0 0 3px #d8dbe2 inset;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.1s ease, box-shadow 0.12s ease;
+}
+
+.sfx-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.sfx-btn:active {
+  transform: translateY(1px);
+}
+
 /* Bottom CTA */
 .bottom-cta {
   text-align: center;
@@ -528,7 +565,7 @@ body {
 
 .jack-cyan { background: #63d3ff; }
 .jack-yellow { background: #ffcf4b; }
-.jack-green { background: #7fff7a; }
+jack-green { background: #7fff7a; }
 .jack-red { background: #ff6b6b; }
 
 /* =========================================================
