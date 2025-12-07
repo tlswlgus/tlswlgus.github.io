@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="crt-overlay"></div>
+
   <div class="container">
     <header class="site-header">
       <div class="brand">
         <img src="small_icon.png" alt="Chippy icon" class="brand-icon" width="56" height="56">
         <div>
-          <h1>Chippy's GameBox</h1>
+          <h1 class="pixel-title">Chippy's GameBox</h1>
           <p class="tagline">A pocket-sized arcade of fast 2D mini-games for Android.</p>
         </div>
       </div>
@@ -21,10 +23,10 @@
     <main>
       <section class="hero card">
         <div class="hero-left">
-          <h2>About the game</h2>
+          <h2 class="section-title">About the game</h2>
           <p>Chippy's GameBox collects quick mini-games like Catch, Dash, and Ping-Pong into short, replayable sessions. Each session randomly selects three mini-games for varied, competitive fun.</p>
 
-          <h3>Features</h3>
+          <h3 class="section-sub">Features</h3>
           <ul>
             <li>Randomized mini-games every session</li>
             <li>Smart AI with balanced challenge</li>
@@ -40,16 +42,18 @@
         </div>
 
         <aside class="hero-right">
-          <img src="VER3MAINMENUSCREEN.gif" alt="Main menu animation" class="hero-gif" />
+          <div class="crt-frame">
+            <img src="VER3MAINMENUSCREEN.gif" alt="Main menu animation" class="hero-gif" />
+          </div>
 
           <div class="download">
-            <a class="btn primary" href="https://github.com/tlswlgus/tlswlgus.github.io/releases/download/Chippy's_Gamebox_v2.0.0/Gamebox_v2.0.0-beta.apk">Download APK</a>
+            <a class="btn pixel-btn blue-btn" href="https://github.com/tlswlgus/tlswlgus.github.io/releases/download/Chippy's_Gamebox_v2.0.0/Gamebox_v2.0.0-beta.apk">Download APK</a>
           </div>
         </aside>
       </section>
 
       <section class="card games">
-        <h3>Some of our games</h3>
+        <h3 class="section-title">Some of our games</h3>
         <div class="game-grid" aria-label="Game logos">
           <figure>
             <img src="Logo_Catch.png" alt="Catch logo">
@@ -75,7 +79,7 @@
       </section>
 
       <section class="card quick-facts">
-        <h3>Quick facts</h3>
+        <h3 class="section-title">Quick facts</h3>
         <ul>
           <li>Art style: 8-bit pixel</li>
           <li>Sound: Chiptune effects</li>
@@ -91,4 +95,3 @@
   </div>
 </body>
 </html>
-
