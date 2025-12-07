@@ -13,213 +13,231 @@
 
 <!-- Boot Screen -->
 <div id="boot-screen">
-  <div class="boot-text">CHIPPY ARCADE SYSTEM<br>BOOTING...</div>
+  <div class="boot-text">
+    CHIPPY ARCADE SYSTEM<br>
+    BOOTING...
+  </div>
 </div>
 
-<!-- Page wrapper -->
-<div class="arcade-wrapper">
+<!-- Handheld console wrapper -->
+<div class="console-wrapper">
+  <div class="console-shell">
 
-  <!-- ARCADE FRAME -->
-  <div class="arcade-frame">
-
-    <div class="arcade-top">
-      <span class="arcade-label">CHIPPY ARCADE SYSTEM • v2.0.0</span>
+    <!-- Top bezel -->
+    <div class="console-top">
+      <div class="console-dot left"></div>
+      <div class="console-label">Chippy's GameBox • v2.0.0 Beta</div>
+      <div class="console-dot right"></div>
     </div>
 
-    <!-- CRT SCREEN -->
-    <div class="crt" id="crt">
+    <!-- Screen area -->
+    <div class="console-screen" id="crt">
       <div class="crt-overlay crt-scanlines"></div>
       <div class="crt-overlay crt-glow"></div>
       <div class="crt-overlay crt-distortion"></div>
       <div class="crt-overlay crt-sweep"></div>
 
-      <!-- Visible content -->
-      <div class="crt-inner">
-        <div class="container">
-
-          <!-- HEADER / BRAND -->
-          <header class="site-header">
-            <div class="brand">
-              <img src="small_icon.png" alt="Chippy icon" class="brand-icon">
-              <div>
-                <h1 class="pixel-title shimmer">Chippy's GameBox</h1>
-                <p class="tagline">
-                  A pocket-sized arcade of fast 2D mini-games starring Chippy, your friendly robot.
-                </p>
-              </div>
+      <div class="screen-inner">
+        <header class="site-header">
+          <div class="brand">
+            <img src="small_icon.png" alt="Chippy icon" class="brand-icon">
+            <div>
+              <h1 class="pixel-title shimmer">Chippy's GameBox</h1>
+              <p class="tagline">
+                A pocket-sized arcade of fast 2D mini-games starring Chippy, your friendly robot.
+              </p>
             </div>
-          </header>
+          </div>
+        </header>
 
-          <main>
+        <main>
 
-            <!-- HERO: main CTA -->
-            <section class="hero card pixel-border">
-              <div class="hero-left">
-                <h2 class="pixel-h2">Arcade in your pocket</h2>
-                <p class="body-text">
-                  Chippy's GameBox is a mobile arcade for Android with a growing collection of
-                  quick, intuitive, competitive mini-games like <strong>Catch</strong>, <strong>Dash</strong>,
-                  and <strong>Ping-Pong</strong>. Every run grabs <strong>three unique mini-games</strong> to
-                  keep each session fresh and replayable.
-                </p>
+          <!-- HERO PANEL -->
+          <section class="panel hero-panel">
 
-                <ul class="hero-bullets">
-                  <li>Fast, pick-up-and-play matches</li>
-                  <li>Face-off with a friend on one device</li>
-                  <li>8-bit pixel art &amp; retro sound</li>
-                  <li>Smart but fair AI for solo play</li>
-                </ul>
+            <div class="hero-left">
+              <h2 class="panel-title">Arcade in your pocket</h2>
+              <p class="body-text">
+                Chippy's GameBox is a mobile arcade for Android with a growing collection of
+                quick, intuitive, competitive mini-games like <strong>Catch</strong>,
+                <strong>Dash</strong>, and <strong>Ping-Pong</strong>. Every run grabs
+                <strong>three unique mini-games</strong> so each session feels fresh and replayable.
+              </p>
 
-                <div class="meta pixel-meta">
-                  <span>Platform: Android</span>
-                  <span>Modes: Single-player (PvE) &amp; Dual-player (PvP)</span>
-                  <span>Connection: Offline &amp; shared-device friendly</span>
-                </div>
+              <ul class="pixel-list hero-bullets">
+                <li>Fast, pick-up-and-play matches</li>
+                <li>Face-off with a friend on one device</li>
+                <li>8-bit pixel art &amp; retro sound</li>
+                <li>Smart but fair AI for solo play</li>
+              </ul>
+
+              <div class="pixel-meta">
+                <span>Platform: Android</span>
+                <span>Modes: Single-player (PvE) &amp; Dual-player (PvP)</span>
+                <span>Connection: Offline &amp; shared-device friendly</span>
               </div>
 
-              <aside class="hero-right">
-                <div class="screen-frame pixel-border">
-                  <img src="VER3MAINMENUSCREEN.gif"
-                       alt="Main menu animation"
-                       class="hero-gif" />
-                </div>
-
-                <div class="download-panel">
-                  <span class="download-label">Get the game</span>
-                  <a class="pixel-btn main-download"
-                     href="https://github.com/tlswlgus/tlswlgus.github.io/releases/download/Chippy's_Gamebox_v2.0.0/Gamebox_v2.0.0-beta.apk">
-                    DOWNLOAD APK
-                  </a>
-                  <p class="download-meta">
-                    v2.0.0 • Android • Offline friendly
-                  </p>
-                </div>
-              </aside>
-            </section>
-
-            <!-- SECTION: Variety & Replayability (README) -->
-            <section class="card pixel-border">
-              <h3 class="pixel-h3">Variety &amp; Replayability</h3>
-              <p class="body-text">
-                No two sessions are ever the same. Each playthrough randomly selects
-                <strong>three unique mini-games</strong> from Chippy’s library, giving you new
-                combinations and pacing every time you play. Simple controls keep the experience
-                accessible, while score chasing and tighter patterns keep it hard to master.
-              </p>
-
-              <ul class="pixel-list">
-                <li>Single-player (PvE) and Dual-player (PvP) modes</li>
-                <li>Shared-device play for real face-to-face battles</li>
-                <li>Built for short sessions that still feel meaningful</li>
-                <li>Easy to learn, designed to be replayed a lot</li>
-              </ul>
-            </section>
-
-            <!-- SECTION: Smart Game Design (README) -->
-            <section class="card pixel-border">
-              <h3 class="pixel-h3">Smart Game Design</h3>
-              <p class="body-text">
-                Under the hood, Chippy’s GameBox uses computational logic to keep the action
-                interactive and fair. In single-player <strong>Ping-Pong</strong>, for example,
-                Chippy’s AI tracks the ball with just enough human-like imperfection to feel
-                challenging without being impossible.
-              </p>
-              <p class="body-text">
-                The random selection system is tuned so that:
-              </p>
-              <ul class="pixel-list">
-                <li>Game combos feel unique instead of repetitive</li>
-                <li>Difficulty ramps in a fair, readable way</li>
-                <li>Each mini-game has room to shine in different lineups</li>
-                <li>Sessions feel “fresh but familiar” every time</li>
-              </ul>
-            </section>
-
-            <!-- GAMES GRID -->
-            <section class="card games pixel-border">
-              <h3 class="pixel-h3">Mini-Games in this build</h3>
-              <div class="game-grid">
-                <figure>
-                  <img src="Logo_Catch.png" alt="Catch logo">
-                  <figcaption>Catch</figcaption>
-                </figure>
-                <figure>
-                  <img src="Logo_Dash.png" alt="Dash logo">
-                  <figcaption>Dash</figcaption>
-                </figure>
-                <figure>
-                  <img src="Logo_Dodge.png" alt="Dodge logo">
-                  <figcaption>Dodge</figcaption>
-                </figure>
-                <figure>
-                  <img src="Logo_Pong.png" alt="Pong logo">
-                  <figcaption>Ping-Pong</figcaption>
-                </figure>
-                <figure>
-                  <img src="Logo_TTT.png" alt="Tic Tac Toe logo">
-                  <figcaption>Tic Tac Toe</figcaption>
-                </figure>
-              </div>
-            </section>
-
-            <!-- QUICK FACTS (README) -->
-            <section class="card quick-facts pixel-border">
-              <h3 class="pixel-h3">Quick Facts</h3>
-              <ul class="pixel-list">
-                <li>Art Style: 8-bit pixel retro</li>
-                <li>Sound: Nostalgic chiptune effects</li>
-                <li>Platform: Android</li>
-                <li>Modes: Single-player (PvE) &amp; Dual-player (PvP)</li>
-                <li>Connectivity: Offline, shared-device multiplayer</li>
-              </ul>
-            </section>
-
-            <!-- TRAILER PLACEHOLDER -->
-            <section class="card pixel-border trailer-card">
-              <h3 class="pixel-h3">Gameplay Trailer</h3>
-              <div class="trailer-frame pixel-border">
-                <!-- When ready, replace src with your YouTube embed link -->
-                <div class="trailer-placeholder">
-                  <span class="trailer-label">Trailer coming soon</span>
-                </div>
-              </div>
-            </section>
-
-            <!-- BOTTOM CTA -->
-            <section class="card pixel-border bottom-cta">
-              <h3 class="pixel-h3">Ready to play?</h3>
-              <p class="body-text">
-                Chippy’s GameBox is built to be a pocket-sized arcade adventure—
-                quick to launch, fun to share, and fair to replay.
-              </p>
-              <a class="pixel-btn main-download"
+              <!-- Main CTA inside hero -->
+              <a class="pixel-btn primary-download"
                  href="https://github.com/tlswlgus/tlswlgus.github.io/releases/download/Chippy's_Gamebox_v2.0.0/Gamebox_v2.0.0-beta.apk">
                 DOWNLOAD APK
               </a>
-              <p class="download-meta">
-                Install on your Android device and start a new run with Chippy today.
-              </p>
-            </section>
+            </div>
 
-          </main>
+            <aside class="hero-right">
+              <div class="screen-frame">
+                <img src="VER3MAINMENUSCREEN.gif"
+                     alt="Main menu animation"
+                     class="hero-gif">
+              </div>
+            </aside>
 
-          <!-- FOOTER -->
-          <footer class="site-footer">
-            <p class="pixel-footer">© 2025 Chippy's GameBox</p>
-            <p class="pixel-footer small">
-              Licensed under the Custom Game Asset License.
-              <a href="LICENSE" class="license-link">View License</a>
+          </section>
+
+          <!-- VARIETY & REPLAYABILITY -->
+          <section class="panel">
+            <h3 class="panel-title section-label">Variety &amp; Replayability</h3>
+            <p class="body-text">
+              No two sessions are ever the same. Each playthrough randomly selects
+              <strong>three unique mini-games</strong> from Chippy’s library, giving you new
+              combinations and pacing every time you play. Simple controls keep the
+              experience accessible, while score chasing and tighter patterns keep it
+              hard to master.
             </p>
-          </footer>
+            <ul class="pixel-list">
+              <li>Single-player (PvE) and Dual-player (PvP) modes</li>
+              <li>Shared-device play for real face-to-face battles</li>
+              <li>Built for short sessions that still feel meaningful</li>
+              <li>Easy to learn, designed to be replayed a lot</li>
+            </ul>
+          </section>
 
+          <!-- SMART GAME DESIGN -->
+          <section class="panel">
+            <h3 class="panel-title section-label">Smart Game Design</h3>
+            <p class="body-text">
+              Under the hood, Chippy’s GameBox uses computational logic to keep the
+              action interactive and fair. In single-player <strong>Ping-Pong</strong>,
+              for example, Chippy’s AI tracks the ball with just enough human-like
+              imperfection to feel challenging without being impossible.
+            </p>
+            <p class="body-text">
+              The random selection system is tuned so that:
+            </p>
+            <ul class="pixel-list">
+              <li>Game combos feel unique instead of repetitive</li>
+              <li>Difficulty ramps in a fair, readable way</li>
+              <li>Each mini-game has room to shine in different lineups</li>
+              <li>Sessions feel “fresh but familiar” every time</li>
+            </ul>
+          </section>
+
+          <!-- BEHIND THE FUN -->
+          <section class="panel">
+            <h3 class="panel-title section-label">Behind the Fun</h3>
+            <p class="body-text">
+              Chippy’s GameBox merges classic arcade energy with modern algorithmic
+              design. It aims to balance accessibility and depth: quick to launch,
+              easy to play on the couch, and satisfying when you start chasing better
+              scores or trying to out-think Chippy’s AI patterns.
+            </p>
+          </section>
+
+          <!-- GAME GRID -->
+          <section class="panel">
+            <h3 class="panel-title section-label">Mini-Games in this build</h3>
+            <div class="game-grid">
+              <figure class="game-card">
+                <img src="Logo_Catch.png" alt="Catch logo">
+                <figcaption>Catch</figcaption>
+              </figure>
+              <figure class="game-card">
+                <img src="Logo_Dash.png" alt="Dash logo">
+                <figcaption>Dash</figcaption>
+              </figure>
+              <figure class="game-card">
+                <img src="Logo_Dodge.png" alt="Dodge logo">
+                <figcaption>Dodge</figcaption>
+              </figure>
+              <figure class="game-card">
+                <img src="Logo_Pong.png" alt="Pong logo">
+                <figcaption>Ping-Pong</figcaption>
+              </figure>
+              <figure class="game-card">
+                <img src="Logo_TTT.png" alt="Tic Tac Toe logo">
+                <figcaption>Tic Tac Toe</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- QUICK FACTS -->
+          <section class="panel quick-facts">
+            <h3 class="panel-title section-label">Quick Facts</h3>
+            <ul class="pixel-list">
+              <li>Art Style: 8-bit pixel retro</li>
+              <li>Sound: Nostalgic chiptune effects</li>
+              <li>Platform: Android</li>
+              <li>Modes: Single-player (PvE) &amp; Dual-player (PvP)</li>
+              <li>Connectivity: Offline, shared-device multiplayer</li>
+            </ul>
+          </section>
+
+          <!-- FINAL THOUGHT / BOTTOM CTA -->
+          <section class="panel bottom-cta">
+            <h3 class="panel-title section-label">Ready to play?</h3>
+            <p class="body-text">
+              Chippy’s GameBox is a pocket-sized arcade adventure that celebrates
+              creativity, fairness, and good old-fashioned fun. Grab your device,
+              call a friend, and let Chippy guide you through endless mini-game madness.
+            </p>
+            <a class="pixel-btn primary-download"
+               href="https://github.com/tlswlgus/tlswlgus.github.io/releases/download/Chippy's_Gamebox_v2.0.0/Gamebox_v2.0.0-beta.apk">
+              DOWNLOAD APK
+            </a>
+          </section>
+
+        </main>
+
+        <footer class="site-footer">
+          <p class="pixel-footer">© 2025 Chippy's GameBox</p>
+          <p class="pixel-footer small">
+            Licensed under the Custom Game Asset License.
+            <a href="LICENSE" class="license-link">View License</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Console controls / deco strip -->
+    <div class="console-controls">
+      <div class="control-row buttons-row">
+        <button id="sound-toggle" class="sound-btn">SOUND: OFF</button>
+        <div class="status-led led-blue"></div>
+        <div class="status-led led-green"></div>
+        <div class="status-led led-red"></div>
+      </div>
+
+      <div class="control-row sliders-row">
+        <div class="slider-slot"></div>
+        <div class="slider-slot"></div>
+        <div class="port-grid">
+          <div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="jack-row">
+          <div class="jack jack-cyan"></div>
+          <div class="jack jack-yellow"></div>
+          <div class="jack jack-green"></div>
+          <div class="jack jack-red"></div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<script src="script.js"></script>
+<!-- Placeholder audio: replace src with your file -->
+<audio id="bgm" loop src="INSERT_SOUND_HERE"></audio>
 
+<script src="script.js"></script>
 </body>
 </html>
-
