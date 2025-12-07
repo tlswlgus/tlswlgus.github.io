@@ -246,3 +246,57 @@ body {
   .hero-gif { max-width: 240px; margin: 0 auto; }
   .pixel-btn { font-size: 10px; }
 }
+
+/* CRT distortion overlay */
+.crt-distortion {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.015) 0px,
+    rgba(0,0,0,0.015) 1px
+  );
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* Sweep animation line */
+.crt-sweep {
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255,255,255,0.05) 50%,
+    transparent
+  );
+  pointer-events: none;
+  opacity: 0;
+}
+
+.crt-sweep.run {
+  animation: sweepAnim 1.5s linear;
+}
+
+@keyframes sweepAnim {
+  0% { top: -100%; opacity: 0; }
+  20% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* Download button highlight */
+.main-download {
+  display: block;
+  margin-top: 14px;
+  text-align: center;
+  font-size: 14px;
+  padding: 14px 20px;
+  animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 12px rgba(100,180,255,0.4); }
+  50% { box-shadow: 0 0 22px rgba(100,180,255,0.8); }
+}
