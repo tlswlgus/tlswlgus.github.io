@@ -71,23 +71,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(4px, 1vw, 16px);
+  padding: 8px; /* reduced from 16px so desktop isn't spaced too far */
 }
 
-/* New smart responsive width logic */
 .console-shell {
-  width: clamp(360px, 95vw, 1200px);
+  width: clamp(380px, 92vw, 1400px); /* ideal scaling for both desktop + mobile */
   background: linear-gradient(180deg, var(--shell-gray), #c1c5ce);
   border-radius: 28px;
-  padding: clamp(12px, 1.8vw, 22px);
+  padding: 20px; /* balanced for both large and small screens */
   border: 5px solid var(--shell-line);
-  box-shadow:
-    0 20px 50px rgba(0,0,0,0.8),
-    0 0 0 4px #f8f9fb inset;
 
-  /* Prevents squishing on tall mobile screens */
-  max-height: 98vh;
-  overflow-y: auto;
+  /* deeper + more realistic console shading */
+  box-shadow:
+    0 22px 55px rgba(0,0,0,0.85),
+    0 0 0 4px #f8f9fb inset;
 }
 
 /* Top bezel */
@@ -635,5 +632,6 @@ jack-green { background: #7fff7a; }
     font-size: 7px;
   }
 }
+
 
 
