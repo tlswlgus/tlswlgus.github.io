@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwe1oxoj3odss"
-path="res://.godot/imported/Memoir.icon.png-30bdf0fabf11009bf09e6f6d19d7fccc.ctex"
+path="res://.godot/imported/Memoir.icon.png-035dbbe4abdad3704264c6e80830f4fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Export/Memoir.icon.png"
-dest_files=["res://.godot/imported/Memoir.icon.png-30bdf0fabf11009bf09e6f6d19d7fccc.ctex"]
+source_file="res://Export_Memoir/Memoir.icon.png"
+dest_files=["res://.godot/imported/Memoir.icon.png-035dbbe4abdad3704264c6e80830f4fc.ctex"]
 
 [params]
 
